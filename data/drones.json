@@ -1,0 +1,82 @@
+{
+  "note": "Lokal dronekatalog. Maks vindgrensene (maksVindMotstand, m/s) styrer vær-tersklene. Utvidbar med andre merker.",
+  "drones": [
+    {
+      "id": "dji-mini-2-se",
+      "merk": "DJI",
+      "modell": "Mini 2 SE",
+      "vektGram": 249,
+      "flytidMin": 31,
+      "maksVindMotstand": 10.7,
+      "maksHastighetMs": 16,
+      "intelliFlying": ["GPS", "IMU", "barometer"],
+      "opptaksKvalitet": "2.7K/30"
+    },
+    {
+      "id": "dji-mini-3",
+      "merk": "DJI",
+      "modell": "Mini 3",
+      "vektGram": 249,
+      "flytidMin": 38,
+      "maksVindMotstand": 10.7,
+      "maksHastighetMs": 16,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer"],
+      "opptaksKvalitet": "4K/30"
+    },
+    {
+      "id": "dji-mini-4-pro",
+      "merk": "DJI",
+      "modell": "Mini 4 Pro",
+      "vektGram": 249,
+      "flytidMin": 34,
+      "maksVindMotstand": 10.7,
+      "maksHastighetMs": 16,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer", "sidesensorer"],
+      "opptaksKvalitet": "4K/60"
+    },
+    {
+      "id": "dji-mavic-air-2",
+      "merk": "DJI",
+      "modell": "Mavic Air 2",
+      "vektGram": 570,
+      "flytidMin": 34,
+      "maksVindMotstand": 10.7,
+      "maksHastighetMs": 19,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer"],
+      "opptaksKvalitet": "4K/60"
+    },
+    {
+      "id": "dji-air-3",
+      "merk": "DJI",
+      "modell": "Air 3",
+      "vektGram": 720,
+      "flytidMin": 46,
+      "maksVindMotstand": 12.0,
+      "maksHastighetMs": 21,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer", "sidesensorer"],
+      "opptaksKvalitet": "4K/60"
+    },
+    {
+      "id": "dji-mavic-3",
+      "merk": "DJI",
+      "modell": "Mavic 3",
+      "vektGram": 895,
+      "flytidMin": 46,
+      "maksVindMotstand": 10.7,
+      "maksHastighetMs": 19,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer", "sidesensorer"],
+      "opptaksKvalitet": "5.1K/50"
+    },
+    {
+      "id": "dji-mavic-3-pro",
+      "merk": "DJI",
+      "modell": "Mavic 3 Pro",
+      "vektGram": 958,
+      "flytidMin": 43,
+      "maksVindMotstand": 12.0,
+      "maksHastighetMs": 21,
+      "intelliFlying": ["GPS", "IMU", "barometer", "nedadrettede sensorer", "sidesensorer"],
+      "opptaksKvalitet": "5.1K/50"
+    }
+  ]
+}

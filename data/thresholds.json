@@ -1,0 +1,11 @@
+{
+  "note": "M2 bruker droneWindToleranceMs som statisk referanse. M3: dronevalg erstatter denne med valgt drones maksVindMotstand.",
+  "droneWindToleranceMs": 10.7,
+  "wind": { "greenRatio": 0.6, "yellowRatio": 0.9 },
+  "gust": { "greenRatio": 0.7, "yellowRatio": 0.9 },
+  "rain": { "yellowMaxMmPerH": 2 },
+  "visibilityKm": { "greenMin": 5, "yellowMin": 1 },
+  "cloudCoverPct": { "greenMax": 25, "yellowMax": 80 },
+  "pressureHpa": { "std": 1013, "greenBand": 5, "yellowBand": 15 },
+  "traffic": { "lowAltitudeM": 300, "maxDistanceKm": 40, "refreshSec": 15 }
+}

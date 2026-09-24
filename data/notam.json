@@ -1,0 +1,38 @@
+[
+  {
+    "id": "demo-eros-aktiv",
+    "title": "Fareområde EROS — aktivt (militært øvingsfelt)",
+    "type": "forbidden",
+    "lat": 63.4652,
+    "lon": 10.9337,
+    "radiusM": 4500,
+    "start": "2026-09-24 06:00",
+    "end": "2026-09-24 18:00",
+    "message": "Aktivt fareområde rundt øvingsfelt (simulert). Flyging forbudt uten tillatelse.",
+    "source": "demo"
+  },
+  {
+    "id": "demo-luftambulanse",
+    "title": "Midlertidig restriksjon — helikopteroperasjoner",
+    "type": "restriction",
+    "lat": 63.4305,
+    "lon": 10.3951,
+    "radiusM": 3000,
+    "start": "2026-09-24 08:00",
+    "end": "2026-09-24 20:00",
+    "message": "Helikopteroperasjoner i området (simulert). Vær ekstra oppmerksom, hold avstand.",
+    "source": "demo"
+  },
+  {
+    "id": "demo-modellfly",
+    "title": "Informasjon — aktivitet modellflyklubb",
+    "type": "info",
+    "lat": 63.3648,
+    "lon": 10.3512,
+    "radiusM": 1500,
+    "start": "2026-09-24 10:00",
+    "end": "2026-09-24 15:00",
+    "message": "Aktivitet med modellfly (simulert). Sjekk gjeldende NOTAM før avgang.",
+    "source": "demo"
+  }
+]

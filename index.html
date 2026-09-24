@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NordFly — Pre-flight for drone</title>
+  <link rel="icon" type="image/png" href="./logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header id="toolbar">
+<div class="brand">
+        <img class="logo" src="./logo.png" alt="NordFly">
+        <div class="title">
+        <h1>NordFly</h1>
+        <span class="tagline">Pre-flight for drone</span>
+      </div>
+    </div>
+    <div class="tools">
+      <button id="btn-locate" type="button" title="Vis simulert drone-posisjon">Simulert posisjon</button>
+      <select id="drone-select" title="Velg drone" disabled>
+        <option value="">Velg drone…</option>
+      </select>
+      <button id="btn-traffic" type="button" class="active" title="Vis/skjul lufttrafikk">Trafikk</button>
+      <button id="btn-low" type="button" title="Vis kun lavtflygende">Lavtfly</button>
+      <button id="btn-notam" type="button" class="active" title="Vis/skjul NOTAM-soner">Notamer</button>
+      <label class="file-btn" for="file-notams" title="Last opp NOTAM-/sonedata (JSON/GeoJSON)">Last opp</label>
+      <input id="file-notams" type="file" accept=".json,.geojson,application/json" hidden>
+      <div class="spacer"></div>
+      <div class="layer-wrap">
+        <button id="btn-layers" type="button" aria-expanded="false" title="Værlag på kart">Værlag ▾</button>
+        <div id="layer-menu" class="layer-menu" hidden>
+          <label><input type="checkbox" data-layer="rain"> Regn</label>
+          <label><input type="checkbox" data-layer="wind"> Vind</label>
+          <label><input type="checkbox" data-layer="cloud"> Skydekke</label>
+          <label><input type="checkbox" data-layer="gust"> Vindkast</label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="map" aria-label="Kart">
+      <div id="map-legend" class="map-legend" aria-hidden="true"></div>
+      <div id="traffic-note" class="traffic-note"></div>
+    </section>
+
+    <aside id="sidebar" aria-label="Informasjonspanel">
+      <section class="panel" id="panel-drone">
+        <h2>Drone</h2>
+        <div id="drone-info" class="drone-info"></div>
+      </section>
+      <section class="panel" id="panel-weather">
+        <h2>Vær <span id="weather-loc" class="panel-sub"></span></h2>
+        <ul id="weather-list" class="weather-list"></ul>
+      </section>
+      <section class="panel" id="panel-checklist">
+        <h2>Pre-flight sjekkliste <span id="checklist-progress" class="panel-sub"></span></h2>
+        <div id="checklist-root" class="checklist"></div>
+        <h2 class="risk-head">Risikovurdering</h2>
+        <div id="risk-root" class="risk"></div>
+        <div id="risk-result" class="risk-result"></div>
+      </section>
+      <section class="panel" id="panel-missions">
+        <h2>Oppdrag <span id="missions-count" class="panel-sub"></span></h2>
+        <div class="missions-actions">
+          <button id="btn-new-mission" type="button">Nytt oppdrag</button>
+          <button id="btn-export-missions" type="button" class="ghost">Eksporter</button>
+        </div>
+        <div id="mission-form" class="mission-form" hidden></div>
+        <div id="missions-list" class="missions-list"></div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

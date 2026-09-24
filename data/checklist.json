@@ -1,0 +1,55 @@
+{
+  "groups": [
+    {
+      "id": "drone",
+      "title": "Drone",
+      "items": [
+        { "id": "drone-batt", "text": "Batterier ladet og sjekket" },
+        { "id": "drone-rotors", "text": "Rotorer uten skade, riktig festet" },
+        { "id": "drone-gps", "text": "GPS / satellitt-signal låst før avgang" },
+        { "id": "drone-cam", "text": "Kamera og kardan sjekket" },
+        { "id": "drone-sd", "text": "SD-kort / minne tilgjengelig" }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Batterier / utstyr",
+      "items": [
+        { "id": "eq-batts", "text": "Nok batterier for oppdraget + buffer" },
+        { "id": "eq-charger", "text": "Lader og kabel med i bilen" },
+        { "id": "eq-spare", "text": "Reserve SD-kort og rotorsett" }
+      ]
+    },
+    {
+      "id": "airspace",
+      "title": "Luftrom & varsling",
+      "items": [
+        { "id": "as-clearance", "text": "Luftromsklarering / varsling RLS eller NAV (ved behov)" },
+        { "id": "as-trafikk", "text": "Vurdert annen lufttrafikk i området (kartlag)" }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Vær",
+      "items": [
+        { "id": "wx-rows", "text": "Vurdert vær-radene ovenfor (grønn/gul/rød)" }
+      ]
+    },
+    {
+      "id": "notam",
+      "title": "NOTAM",
+      "items": [
+        { "id": "nt-active", "text": "Sjekket aktive NOTAM / restriksjoner for området" }
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Regelverk",
+      "items": [
+        { "id": "rl-dronesoner", "text": "Sjekket dronesoner.no — flystedet ligger ikke i forbuds-/restriksjonsområde" },
+        { "id": "rl-ninox", "text": "Registrert i Ninox (Luftfartstilsynet) og operator-ID satt på dronen" },
+        { "id": "rl-landowner", "text": "Grunneiers tillatelse i orden" }
+      ]
+    }
+  ]
+}

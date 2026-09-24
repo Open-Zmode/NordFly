@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "id": "airspace", "title": "Luftrom / trafikk", "options": { "lav": "Ingen trafikk", "middels": "Liten trafikk nær", "hoy": "Tett trafikk" } },
+    { "id": "weather", "title": "Vær", "options": { "lav": "Gode forhold", "middels": "Moderat", "hoy": "Høy vind/nedbør/tåke" } },
+    { "id": "terrain", "title": "Område / terreng", "options": { "lav": "Åpent", "middels": "Skoger / bygninger", "hoy": "Tett bebyggelse" } },
+    { "id": "people", "title": "Person-/dyretetthet", "options": { "lav": "Øde", "middels": "Spredt", "hoy": "Mennesker i nærhet" } },
+    { "id": "experience", "title": "Erfaring / kompetanse", "options": { "lav": "Mange flytimer", "middels": "Noe", "hoy": "Nybegynner" } }
+  ]
+}
